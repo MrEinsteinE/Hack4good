@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Navbar from './components/Navbar.tsx';
+import Banner from './components/Banner.tsx';
+import HackathonDescription from './components/HackathonDescription.tsx';
+import ProblemStatements from './components/ProblemStatements.tsx';
+import Timeline from './components/Timeline.tsx';
+import FAQ from './components/FAQ.tsx';
+import ContactDetails from './components/ContactDetails.tsx';
+import Footer from './components/Footer.tsx';
+import Prizes from './components/Prizes.tsx'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Banner />
+      <HackathonDescription/>
+      <ProblemStatements />
+      <Timeline />
+      <Prizes/>
+      <FAQ />
+      <ContactDetails/>
+      <Footer />
     </div>
   );
 }
